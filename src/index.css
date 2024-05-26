@@ -5,10 +5,30 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #C84754;
+  background-color: #D73950;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+.text-red{
+  color: #D73950;
+}
+.btn{
+  background-color:#D73950 ;
+  color: white;
+  transition: all ease-in-out .2s;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color:#882030
 }
