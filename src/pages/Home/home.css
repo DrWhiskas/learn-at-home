@@ -16,18 +16,6 @@
 	font-size: 53px;
     margin-bottom: 1rem;
 }
-.home__container__info {
-	background-color: #ffc4c4;
-	width: 60svw;
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem;
-}
-.home__container__info__message,
-.home__container__info__progress{
-    border-right: 1px solid black;
-    padding: 1rem;
-}
 .todo{
     margin-top: 2rem;
     width: 100vw;

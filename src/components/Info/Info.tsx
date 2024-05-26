@@ -25,7 +25,7 @@ export default function Info({...props}:InfoProps){
 					<h4 className="info__content__title">Progress</h4>
 					<div className="info__content__progress"></div>
 				</div>
-				<div className="info__content">
+				<div className="info__content__mentor">
 					<h4 className="info__content__title">Mentor</h4>
 					<div className="info__content__mentor">
 						<p>{props.mentorName || 'No mentor'}</p>
