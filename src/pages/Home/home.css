@@ -1,5 +1,36 @@
-.home{
-    background-color: white;
-    height: 100svh;
-    width: 100svw;
+.home {
+	background-color: white;
+	height: 100svh;
+	width: 100svw;
+}
+.home__container {
+	position: relative;
+	top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home__container__title {
+	text-align: center;
+	font-size: 53px;
+    margin-bottom: 1rem;
+}
+.home__container__info {
+	background-color: #ffc4c4;
+	width: 60svw;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.home__container__info__message,
+.home__container__info__progress{
+    border-right: 1px solid black;
+    padding: 1rem;
+}
+.todo{
+    margin-top: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
 }
