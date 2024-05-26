@@ -4,7 +4,6 @@ import './index.css';
 import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import Signin from './pages/SignIn/Signin';
-import Dashboard from './pages/Dashboard/Dashboard';
 import ForgotPassword from './pages/ForgotPassword/ForgotPassword';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
@@ -20,7 +19,6 @@ root.render(
 				<Route path="/login" element={<Login />} />
 				<Route path="/signin" element={<Signin />} />
 				<Route path="/forgot" element={<ForgotPassword />} />
-				<Route path="/dashboard" element={<Dashboard />} />
 				<Route path="/home" element={<Home />} />
 			</Routes>
 		</HashRouter>
