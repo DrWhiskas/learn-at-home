@@ -1,0 +1,137 @@
+.header{
+    width: 100dvw;
+    height: 10svh;
+    background-color: #D73950;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+}
+.header__burger{
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: inherit;
+}
+.header__links{
+    display: flex;
+    position: relative;
+    place-items: center;
+    gap: 2rem;
+}
+.header__links__logo{
+    width: 220px;
+}
+.header__links__link{
+    color: white;
+    font-size: calc(12px + .5dvw);
+}
+/*
+.header__logo{
+    display: flex;
+    position: relative;
+    place-self: center;
+    width: 100px;
+    height: 100px;
+}
+.logo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header__links{
+    display: flex;
+    position: relative;
+    right: 10%;
+    place-items: center;
+    gap: 10%;
+}
+.header__links__link{
+    color: black;
+    font-size: calc(12px + .6dvw);
+}
+.header__links__link:hover{
+    color: #DD2803;
+}
+
+
+@media screen and (max-width: 768px) {
+    .header{
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+    }
+    .header__links{
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        align-items: center;
+        right: -100vw;
+        top: 0;
+        height: 100svh;
+        padding: 2rem;
+        visibility: hidden;
+        background-color: white;
+    }
+    .show-header .header__links{
+        top: 0;
+        right: 0;
+        width: 40svw;
+        visibility:visible;
+        z-index: 1;
+        transition: all ease-in-out .2s;
+    }    
+    .header__link{
+        display: block;
+        padding: 1.5rem;
+        font-size: 5vw;
+    }
+    .header__burger{
+        display: block;
+        position: fixed;
+        top: 2rem;
+        right: 1rem;
+        z-index: 1;
+    }
+    .header__burger:hover{
+        cursor: pointer;
+    }
+    button,
+    button::before,
+    button::after {
+        display: block;
+        width: 27px;
+        height: 3px;
+        position: relative;
+        border-radius: 3px;
+        background: #DD2803;
+        transition: all .3s ease-in-out;
+    }
+    button::before,
+    button::after{
+        content: "";
+        position: absolute;
+        left: 0;
+    }
+    button::before{
+        transform: translateY(-12px);
+    }
+    button::after{
+        transform: translateY(12px);
+    }
+    .show-header button::before{
+        transform: rotate(45deg);
+    }
+    .show-header button::after{
+        transform: rotate(-45deg);
+    }
+    .show-header button{
+        width: 0;
+        background: transparent;
+    }
+}
+*/
