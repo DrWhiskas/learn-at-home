@@ -1,22 +1,20 @@
 import React from "react";
-import './login.css'
+import './signin.css'
 import Logo from '../../media/logo.png'
 import User from '../../media/Login/user-light-Red.png'
 import LoginModal from "../../components/LoginModal/LoginModal";
 
-export default function Login(){
+export default function Signin(){
     return (
-			<section className="login">
+			<section className="signin">
 				<img src={Logo} alt="logo" />
 				<LoginModal
 					loginIcon={User}
-					title="Log in to"
-					loginButtonText="Log in"
-					forgotPasswordText="Forgot your password?"
-					forgotPasswordLink="/forgot"
-					noAccountText="Don't have an account?"
-					signUpText="Sign In"
-					signUpLink="/signin"
+					title="Sign in to"
+					loginButtonText="Sign in"
+					noAccountText="Already have an account?"
+					signUpText="Log In"
+					signUpLink="/login"
 					buttonLink="home"
 				/>
 			</section>

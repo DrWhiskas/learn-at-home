@@ -2,19 +2,29 @@ import React from 'react';
 import './loginModal.css';
 import Logo from '../../media/logo.png';
 import User from '../../media/login/user-light-Red.png';
+import { Link } from 'react-router-dom';
+
 
 interface LoginModalProps {
 	title?: string;
-    loginIcon?: string
+	loginIcon?: string;
 	emailLabel?: string;
-	passwordLabel?: string;
+
 	loginButtonText?: string;
+    buttonLink?:string
+
+	passwordLabel?: string;
 	forgotPasswordText?: string;
-    noAccountText?: string
+	forgotPasswordLink?: string;
+
+	noAccountText?: string;
+
 	signUpText?: string;
+	signUpLink?: string;
 }
 
 export default function LoginModal({...props}:LoginModalProps) {
+
 	return (
 		<section className="login-modal">
 			<div className="login-modal__container">
@@ -44,19 +54,23 @@ export default function LoginModal({...props}:LoginModalProps) {
 						/>
 					</label>
 					<label>
-						<button className="login-modal__container__form__btn btn">
-							{props.loginButtonText}
-						</button>
+						<Link to={props.buttonLink || ''}>
+							<button className="login-modal__container__form__btn btn">
+								{props.loginButtonText}
+							</button>
+						</Link>
 					</label>
 					<div className="login-modal__container__form__help">
-						<a href="#" className="login-modal__container__log text-red">
+						<Link to={props.forgotPasswordLink || ''}
+							className="login-modal__container__log text-red"
+						>
 							{props.forgotPasswordText}
-						</a>
+						</Link>
 						<p className="login-modal__container__log">
 							{props.noAccountText}{' '}
-							<a href="#" className="text-red">
+							<Link to={props.signUpLink || ''} className="text-red">
 								{props.signUpText}
-							</a>
+							</Link>
 						</p>
 					</div>
 				</form>
