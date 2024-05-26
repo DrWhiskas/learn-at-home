@@ -32,9 +32,11 @@ export default function Header(){
 					</Link>
 					<CreateLinks link="" text="Calendar" />
 					<CreateLinks link="" text="Tasks" />
-					<div className="logout">
-						<LogOut />
-					</div>
+					<Link to='/login'>
+						<div className="logout">
+							<LogOut />
+						</div>
+					</Link>
 				</ul>
 				<button className="header__burger" onClick={handleShowLinks}>
 					<span className="burger-bar"></span>

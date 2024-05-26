@@ -6,7 +6,7 @@ import LoginModal from "../../components/LoginModal/LoginModal";
 
 export default function ForgotPassword() {
 	return (
-		<section className="forgotPassword">
+		<section className="forgotPassword background-red">
 			<img src={Logo} alt="logo" />
 			<LoginModal
 				loginIcon={User}

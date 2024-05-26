@@ -25,10 +25,15 @@ export default function Info({...props}:InfoProps){
 					<h4 className="info__content__title">Progress</h4>
 					<div className="info__content__progress"></div>
 				</div>
-				<div className="info__content__mentor">
+				<div className="info__content mentor">
 					<h4 className="info__content__title">Mentor</h4>
 					<div className="info__content__mentor">
-						<p>{props.mentorName || 'No mentor'}</p>
+						<img
+							className="info__content__mentor__img"
+							src={props.mentorImg}
+							alt={props.mentorName + " 's picture"}
+						/>
+						<span>{props.mentorName || 'No mentor'}</span>
 					</div>
 				</div>
 			</div>

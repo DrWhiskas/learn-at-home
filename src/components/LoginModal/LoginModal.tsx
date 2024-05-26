@@ -54,21 +54,21 @@ export default function LoginModal({...props}:LoginModalProps) {
 						/>
 					</label>
 					<label>
-						<Link to={props.buttonLink || ''}>
-							<button className="login-modal__container__form__btn btn">
+						<Link to={props.buttonLink || '/login'}>
+							<div className="login-modal__container__form__btn btn">
 								{props.loginButtonText}
-							</button>
+							</div>
 						</Link>
 					</label>
 					<div className="login-modal__container__form__help">
-						<Link to={props.forgotPasswordLink || ''}
+						<Link to={props.forgotPasswordLink || '/forgot'}
 							className="login-modal__container__log text-red"
 						>
 							{props.forgotPasswordText}
 						</Link>
 						<p className="login-modal__container__log">
 							{props.noAccountText}{' '}
-							<Link to={props.signUpLink || ''} className="text-red">
+							<Link to={props.signUpLink || '/signin'} className="text-red">
 								{props.signUpText}
 							</Link>
 						</p>

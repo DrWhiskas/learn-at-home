@@ -6,7 +6,7 @@ import LoginModal from "../../components/LoginModal/LoginModal";
 
 export default function Signin(){
     return (
-			<section className="signin">
+			<section className="signin background-red">
 				<img src={Logo} alt="logo" />
 				<LoginModal
 					loginIcon={User}

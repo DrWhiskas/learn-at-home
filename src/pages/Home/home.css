@@ -1,11 +1,11 @@
 .home {
 	background-color: white;
-	height: 100svh;
 	width: 100svw;
+    position: relative;
 }
 .home__container {
 	position: relative;
-	top: 15%;
+	margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,4 +21,23 @@
     width: 100vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    
+}
+.todo__title{
+    margin-bottom: 5rem;
+}
+.todo__tasks,.todo__events{
+    width: 50%;
+    position: relative;
+}
+.todo__tasks__list{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;    
+    width: 100%;
+    gap: 5rem;
+    padding: 1rem;
 }
